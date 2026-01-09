@@ -3,33 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freegroup.de</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 { margin-bottom: 0.5rem; }
-        p { color: #666; }
-    </style>
+    <title>Portfolio | Float UI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>freegroup.de</h1>
-        <p>Welcome to our simple page.</p>
+
+    <!-- Vertical Sticky Navigation (Green Glass) -->
+    <div class="nav-container reveal visible">
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Profile</a>
+            <a href="#projects">Projects</a>
+        </nav>
     </div>
+
+    <div class="content-wrapper">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <h1 class="reveal delay-1">Good afternoon, stranger</h1>
+            <p class="lead reveal delay-2">
+                Welcome to <strong>freegroup.de</strong>. I code for fun and non-profit. <br>
+                This is my playground for all things software development.
+            </p>
+        </section>
+
+        <!-- Profile / About Section -->
+        <section id="about" style="text-align: center;">
+             <h2 class="reveal">Profile Overview</h2>
+             <p class="reveal delay-1" style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 40px auto; font-size: 1.1rem; line-height: 1.8;">
+                I am a <strong>developer by heart</strong>. <br>I don't just write code; I build solutions, automate the boring stuff, and bring ideas to life. <br>From backend systems to 3D printing, I love everything related to software and awesome tech.
+             </p>
+
+             <div class="skills-grid reveal delay-2">
+                 <div class="skill-item">Full Stack</div>
+                 <div class="skill-item">Node.js</div>
+                 <div class="skill-item">Python</div>
+                 <div class="skill-item">ML / AI</div>
+                 <div class="skill-item">K8s & Docker</div>
+                 <div class="skill-item">Cloud (GCP/AWS)</div>
+                 <div class="skill-item">Arduino</div>
+                 <div class="skill-item">3D Printing</div>
+             </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="reveal" style="text-align: center; margin-bottom: 40px;">Playground & Projects</h2>
+            <div class="grid">
+                
+                <a href="https://electra.academy" target="_blank" class="card reveal delay-1">
+                    <div class="card-icon">⚡️</div>
+                    <h3>Electra Academy</h3>
+                    <p>Educational platform for electronics and circuit simulation.</p>
+                    <div class="card-meta">Education · Simulation</div>
+                </a>
+
+                <a href="https://freegroup.github.io/CampingElectricCalculator/#/" target="_blank" class="card reveal delay-2">
+                    <div class="card-icon">🔌</div>
+                    <h3>Camping Calc</h3>
+                    <p>Utility tool to calculate power consumption for camping trips.</p>
+                    <div class="card-meta">Utility · PWA · Vue</div>
+                </a>
+
+                <a href="https://github.com/freegroup/draw2d" target="_blank" class="card reveal delay-3">
+                    <div class="card-icon">🎨</div>
+                    <h3>Draw2D</h3>
+                    <p>A powerful JavaScript library to create flowcharts and diagrams.</p>
+                    <div class="card-meta">Library · JavaScript · SVG</div>
+                </a>
+
+                 <a href="https://github.com/freegroup/draw2d_dhtml" target="_blank" class="card reveal delay-3">
+                    <div class="card-icon">🕸️</div>
+                    <h3>Draw2D DHTML</h3>
+                    <p>Legacy DHTML version of the diagramming library.</p>
+                    <div class="card-meta">Legacy · DHTML</div>
+                </a>
+
+                <a href="https://github.com/freegroup/HoruCNC" target="_blank" class="card reveal delay-2">
+                    <div class="card-icon">⚙️</div>
+                    <h3>HoruCNC</h3>
+                    <p>Image to G-Code converter for CNC milling.</p>
+                    <div class="card-meta">CNC · G-Code · GRBL</div>
+                </a>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 freegroup.de</p>
+        </footer>
+    
+    </div> <!-- End content-wrapper -->
+
+    <!-- Scroll Hooks Script -->
+    <script src="script.js"></script>
 </body>
 </html>
+>>>>>>>REPLACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
